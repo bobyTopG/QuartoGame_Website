@@ -1,11 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Arial', sans-serif;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
+
 
 p {
     font-family: 'berlin', 'Arial', sans-serif;
@@ -90,7 +83,7 @@ footer .first-row, footer .second-row {
     border-radius: 15px;
     border-style: solid;
     border-color: #232323;
-    font-size: 22px;
+    font-size: 26px;
     height: 55px;
     width: 200px;
     cursor: pointer;
