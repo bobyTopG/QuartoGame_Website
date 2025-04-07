@@ -1,12 +1,12 @@
 @font-face {
     font-family: 'berlin';
-    src: url('/resources/fonts/berlin.ttf');
+    src: url('/media/fonts/berlin.ttf');
 }
 
 
 @font-face {
     font-family: 'berlin bold';
-    src: url('/resources/fonts/berlinBold.ttf');
+    src: url('/media/fonts/berlinBold.ttf');
 }
 
 body {
@@ -14,15 +14,40 @@ body {
     font-family: 'berlin bold';
 }
 
-main > h1 {
+section.hero > h1 {
     text-align: center;
     font-family: "berlin bold", monospace;
     font-size: 48px;
     margin: 0;
 }
+main{
+    padding: 77px 0 0 0;
 
+}
 main > p {
     font-family: "berlin", monospace;
     text-align: center;
     font-size: 20px;
+}
+section {
+    width: 100%;
+}
+section.hero{
+    height: calc(100vh - 77px);
+    background-color: #F7931E;
+}
+
+section.game{
+    height: 500px;
+    background-color: #DBD6B2;
+}
+
+section.developers{
+    height: 500px;
+    background-color: #18B235;
+}
+
+section.statistics{
+    height: 500px;
+    background-color: #29ABE2;
 }

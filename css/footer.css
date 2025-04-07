@@ -12,9 +12,7 @@ html {
 
 main {
     flex: 1;
-    padding: 20px;
     /* Add padding to ensure content isn't hidden behind footer */
-    padding-bottom: 400px;
 }
 
 footer {
