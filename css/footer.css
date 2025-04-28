@@ -87,15 +87,15 @@ footer .first-row, footer .second-row {
     cursor: pointer;
 }
 
-a {
+footer a {
     color: #F7931E;
 }
 
-a:visited {
+footer a:visited {
     color: #F7931E;
 }
 
-a:hover {
+footer a:hover {
     color: #e6621d;
 }
 

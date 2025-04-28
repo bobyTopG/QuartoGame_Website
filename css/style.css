@@ -9,6 +9,10 @@
     src: url('/media/fonts/berlinBold.ttf');
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     font-family: 'berlin bold';

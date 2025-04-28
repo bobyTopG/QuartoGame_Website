@@ -39,7 +39,7 @@ nav .buttons {
     gap:20px; /* instead of giving margin to buttons*/
 }
 
- button {
+nav a {
     font-family: "berlin bold", monospace;
     font-size: 30px;
     color: white;
@@ -47,6 +47,7 @@ nav .buttons {
     border-radius: 10px;
     border: 4px solid #232323;
     padding: 5px 15px 5px 15px; /* top right bottom left */
+    text-decoration: none;
 }
 
 button:hover {
