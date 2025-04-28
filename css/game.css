@@ -1,0 +1,103 @@
+section.game .overview {
+    text-align: center;
+    background: #F7F4D5;
+}
+
+section.game .overview > h1 {
+    font-size: 80px;
+    color: #66C251;
+}
+
+section.game .overview > p {
+    font-size: 60px;
+    font-family: "berlin";
+}
+
+section.game .piece-container {
+    display: flex;
+    align-content: center;
+    justify-content:space-around;
+}
+
+.piece-attribute {
+    text-align: center;
+}
+
+.piece-attribute > p {
+    margin: 0px;
+}
+
+.piece-attribute > h1 {
+    font-size: 40px;
+    margin: 0px;
+}
+
+.piece-attribute > img {
+    width: 200px;
+    height: 100px;
+}
+
+.piece-opening {
+    width: 20%;
+    height: 100%;
+    align-self: center;
+}
+
+section.game .piece-container .piece-opening > h1 {
+    font-size: 50px;
+    font-family: "berlin";
+    text-align: center;
+}
+
+.piece-word {
+    color: #754C24;
+}
+
+.attribute-word {
+    color: #F9761E;
+}
+
+.basic-rules {
+    background: #F7F4D5;
+    text-align: center;
+}
+
+.basic-rules > h1 {
+    color: #29ABE2;
+    font-size: 80px;
+}
+
+.basic-rules > p {
+    font-size: 40px;
+}
+
+.wincon-container {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.trophy-image {
+    align-self: center;
+}
+.trophy-image > img {
+    height: 250px;
+    width:150px;
+}
+.wincon-text {
+    width: 75%
+}
+.wincon-text > h1 {
+    font-size: 80px;
+    text-align: center;
+    color: #FFBB01;
+    font-family: "berlin";
+}
+
+.wincon-text > p {
+    font-size: 40px;
+}
+
+.quarto-text {
+    color: #66C251;
+}
