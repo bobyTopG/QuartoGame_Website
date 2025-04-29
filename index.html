@@ -48,48 +48,60 @@
     </section>
     <section id="game" class="game">
         <div class = "overview">
-            <h1>Game</h1>
-            <p>Quarto is a strategy board game played on a 4x4 grid with 16 unique pieces.</p>
+            <div class="container">
+                <h1>Game</h1>
+                <p>Quarto is a strategy board game played on a 4x4 grid with 16 unique pieces.</p>
+    
+            </div>
         </div>
-        <div class = "piece-container">
-            <div class = "piece-opening">
-                <h1>Each <span class="piece-word">piece</span> has 4 <span class="attribute-word">attributes</span>:</h1>
+        <div class = "piece">
+            <div class="container">
+                <div class = "piece-opening">
+                    <h1>Each <span class="piece-word">piece</span> has 4 <span class="attribute-word">attributes</span>:</h1>
+                </div>
+                <div class = "piece-column">
+                    <div class = "piece-attribute">
+                        <h1>size</h1>
+                        <p>(small, big)</p>
+                        <img src="media/game_section/Size.png">
+                    </div>
+                    <div class="piece-attribute">
+                        <h1>fill</h1>
+                        <p>(solid, hollow)</p>
+                        <img src="media/game_section/Fill.png">
+                    </div>
+                </div>
+                <div class = "piece-column">
+                    <div class = "piece-attribute">
+                        <h1>shape</h1>
+                        <p>(round, square)</p>
+                        <img src="media/game_section/Shape.png">
+                    </div>
+                    <div class = "piece-attribute">
+                        <h1>color</h1>
+                        <p>(light, dark)</p>
+                        <img src="media/game_section/Color.png">
+                    </div>
+                </div>
             </div>
-            <div class = "piece-column">
-                <div class = "piece-attribute">
-                    <h1>size</h1>
-                    <p>(small, big)</p>
-                    <img src="media/game_section/Size.png">
-                </div>
-                <div class="piece-attribute">
-                    <h1>fill</h1>
-                    <p>(solid, hollow)</p>
-                    <img src="media/game_section/Fill.png">
-                </div>
-            </div>
-            <div class = "piece-column">
-                <div class = "piece-attribute">
-                    <h1>shape</h1>
-                    <p>(round, square)</p>
-                    <img src="media/game_section/Shape.png">
-                </div>
-                <div class = "piece-attribute">
-                    <h1>color</h1>
-                    <p>(light, dark)</p>
-                    <img src="media/game_section/Color.png">
-                </div>
-            </div>
+ 
         </div>
         <div class = "basic-rules">
-            <h1>Basic Rules</h1>
-            <p>
-                Players take turns. Your opponent selects what piece you must place.
-                You choose where to place that piece on the board. After placing,
-                you must select the next piece for your opponent.
-            </p>
-            <p>TODO: PLACE SCREENSHOT/GIF OF GAME</p>
+            <div class="container">
+                <h1>Basic Rules</h1>
+                <p>
+                    Players take turns. Your opponent selects what piece you must place.
+                    You choose where to place that piece on the board. After placing,
+                    you must select the next piece for your opponent.
+                </p>
+                <div class="image-container">
+                    <img class="gif-image" src="/media/game_section/Gameplay.gif" alt="Gameplay GIF">
+                </div>
+            </div>
+
         </div>
         <div class = "wincon-container">
+            <div class="container">
             <div class = "trophy-image">
                 <img src="media/game_section/Trophy.png">
             </div>
@@ -101,6 +113,9 @@
                     announcing <span class="quarto-text">"Quarto!"</span> The game ends in a draw if all pieces are
                     placed with no winner.
                 </p>
+            </div>
+
+
             </div>
         </div>
     </section>

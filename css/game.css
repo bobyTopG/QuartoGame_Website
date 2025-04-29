@@ -1,19 +1,43 @@
+section.game {
+    width: 100%;
+}
+
+section.game .p, section.game h1{
+    margin: 0;
+}
+
 section.game .overview {
     text-align: center;
-    background: #F7F4D5;
+    padding-bottom: 50px;
+    padding-left:50px;
+    padding-right:50px;
+
+
 }
 
-section.game .overview > h1 {
-    font-size: 80px;
+section.game .overview h1 {
+    font-size: clamp(80px, 70px + 4vw, 120px);
     color: #66C251;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+
 }
 
-section.game .overview > p {
-    font-size: 60px;
+section.game .overview p {
+    font-size: 30px;
+    margin: 0;
     font-family: "berlin";
+    box-sizing: border-box;
 }
 
-section.game .piece-container {
+.piece{
+    background: #F7F4D5;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+section.game .piece .container {
     display: flex;
     align-content: center;
     justify-content:space-around;
@@ -23,27 +47,26 @@ section.game .piece-container {
     text-align: center;
 }
 
-.piece-attribute > p {
+.piece-attribute   p {
     margin: 0px;
 }
 
-.piece-attribute > h1 {
+.piece-attribute   h1 {
     font-size: 40px;
     margin: 0px;
 }
 
-.piece-attribute > img {
+.piece-attribute   img {
     width: 200px;
     height: 100px;
 }
 
 .piece-opening {
     width: 20%;
-    height: 100%;
     align-self: center;
 }
 
-section.game .piece-container .piece-opening > h1 {
+section.game .piece .piece-opening   h1 {
     font-size: 50px;
     font-family: "berlin";
     text-align: center;
@@ -58,46 +81,109 @@ section.game .piece-container .piece-opening > h1 {
 }
 
 .basic-rules {
-    background: #F7F4D5;
+    width: 100%;
     text-align: center;
+    padding: 30px;
+    box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    overflow: hidden;
 }
 
-.basic-rules > h1 {
+
+.basic-rules h1 {
     color: #29ABE2;
-    font-size: 80px;
+    font-size: 60px;
 }
 
-.basic-rules > p {
-    font-size: 40px;
+.basic-rules p{
+    font-size: clamp(20px, 10px + 3vw,30px);
+
 }
 
-.wincon-container {
+.basic-rules .image-container {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.basic-rules .gif-image {
+    width: 101%; 
+    display: block;
+    position: relative;
+    left: -3px; 
+    margin-top: -3.5%; 
+    margin-bottom: -0.2%;
+}
+
+.wincon-container{
+    background: #F7F4D5;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.wincon-container .container{
     display: flex;
     justify-content: space-around;
+    gap:40px;
     align-content: center;
 }
 
 .trophy-image {
-    align-self: center;
+    margin:auto;
 }
-.trophy-image > img {
-    height: 250px;
-    width:150px;
+.trophy-image img {
+    height: clamp(150px, 130px + 10vw ,250px);
 }
 .wincon-text {
     width: 75%
 }
-.wincon-text > h1 {
-    font-size: 80px;
+.wincon-text h1 {
+    font-size: clamp(40px, 15px + 7vw, 80px);
     text-align: center;
     color: #FFBB01;
     font-family: "berlin";
 }
 
-.wincon-text > p {
-    font-size: 40px;
+.wincon-text p {
+    font-size: clamp(20px, 10px + 3vw, 30px);
 }
 
 .quarto-text {
     color: #66C251;
+}
+
+
+section.game .container{
+    max-width: 1028px;
+    margin: auto;
+
+}
+
+
+@media (max-width: 800px) {
+    .piece-column{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .piece .piece-opening{
+        text-align: center;
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .piece .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .wincon-container .container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+
 }
