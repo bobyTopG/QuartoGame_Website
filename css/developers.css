@@ -135,12 +135,7 @@ img {
     width: 100%;
 }
 
-.cool-s-container {
-    position: absolute;
-    width: 60px;
-    left: calc(21.5%);
-    bottom: 30px;
-}
+
 
 @media (max-width: 1200px) {
     .person {
@@ -153,10 +148,7 @@ img {
         height: auto;
     }
 
-    .cool-s-container {
-        width: 60px;
-        left: 40%;
-    }
+
 
     .tic-tac-toe-container {
         width: 120px;
@@ -208,11 +200,6 @@ img {
     }
 
 
-    .cool-s-container {
-        width: 40px;
-        left: 40%;
-        bottom: 20%;
-    }
 
     .tic-tac-toe-container {
         width: 80px;
@@ -247,8 +234,5 @@ img {
         left: calc(5%);
     }
 
-    .cool-s-container {
-        left: 80%;
-    }
 
 }
