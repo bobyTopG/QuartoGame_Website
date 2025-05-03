@@ -1,4 +1,4 @@
-section.hero .container{
+section.hero .container {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -8,7 +8,7 @@ section.hero .container{
     box-sizing: border-box;
 }
 
-section.hero .left{
+section.hero .left {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -17,17 +17,18 @@ section.hero .left{
     padding-bottom: 50px;
 }
 
-section.hero .text-container{
+section.hero .text-container {
     text-align: left;
     color: #2B2B2B;
     position: relative;
     z-index: 10;
 }
-section.hero .left .title{
+
+section.hero .left .title {
     font-size: clamp(72px, 50px + 8vw, 164px);
 }
 
-section.hero .left .sub-title{
+section.hero .left .sub-title {
     padding-left: 90px;
     font-size: 32px;
 }
@@ -42,7 +43,7 @@ section.hero .left .image-container {
     z-index: 5;
 }
 
-section.hero .image-container img{
+section.hero .image-container img {
     position: absolute;
 
 }
@@ -79,55 +80,67 @@ section.hero .image-container img:nth-child(5) {
 }
 
 
-section.hero .right{
+section.hero .right {
     width: 40%;
 }
 
-section.hero .right .container{
+section.hero .right .container {
     width: 100%;
     padding: clamp(0px, 0px + 2vw, 40px);
 }
 
-section.hero .right .container img{
+section.hero .right .container img {
     width: 100%;
     height: auto;
 }
 
-@media (max-width: 960px){
-    section.hero .right .container{
-    width: 100%;
-    padding: clamp(0px, 0px + 2vw, 40px);
-}
+@media (max-width: 960px) {
+    section.hero .right .container {
+        width: 100%;
+        padding: clamp(0px, 0px + 2vw, 40px);
+    }
 }
 
 @media (max-width: 800px) {
+    .hero {
+        padding-bottom: 50px;
+
+    }
+
     section.hero .container {
         flex-direction: column-reverse;
-        padding: 20px; /* Reduced padding for mobile */
-        height: auto; /* Allow container to adjust to content */
+        padding: 20px;
+        /* Reduced padding for mobile */
+        height: auto;
+        /* Allow container to adjust to content */
     }
-    
+
     section.hero .left,
     section.hero .right {
         width: 100%;
     }
-    
+
     section.hero .right {
         padding-top: 50px;
-        max-height: 50vh; /* Limit height to prevent overflow */
-        overflow: hidden; /* Hide overflow */
+        max-height: 50vh;
+        /* Limit height to prevent overflow */
+        overflow: hidden;
+        /* Hide overflow */
     }
-    
+
     section.hero .right .container {
-        padding: 0; /* Remove padding on mobile */
+        padding: 0;
+        /* Remove padding on mobile */
         height: auto;
     }
-    
+
     section.hero .right .container img {
         width: 100%;
         height: auto;
-        max-height: 50vh; /* Ensure image doesn't exceed viewport height */
-        object-fit: contain; /* Maintain aspect ratio */
+        max-height: 50vh;
+        /* Ensure image doesn't exceed viewport height */
+        object-fit: contain;
+        /* Maintain aspect ratio */
     }
 
     section.hero .left .sub-title {
@@ -164,4 +177,3 @@ section.hero .right .container img{
         width: clamp(40px, 30px + 3vw, 80px);
     }
 }
-

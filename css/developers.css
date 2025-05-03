@@ -1,0 +1,254 @@
+.developers {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px 60px 50px 60px;
+    display: flex;
+    justify-content: center;
+    border-top: 10px dashed black;
+}
+
+.developers .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+.developers .title {
+    margin-top: 35px;
+    font-size: clamp(80px, 70px + 4vw, 120px);
+    color: #F7931E;
+}
+
+.white-board {
+    background-color: white;
+    border: 10px solid gray;
+    border-radius: 25px;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    gap: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+}
+
+.person {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 40%;
+    height: 90%;
+}
+
+.image-container {
+    position: relative;
+    z-index: 5;
+}
+
+.image-placeholder {
+    background-color: #EAE6B5;
+    height: 130px;
+    width: 200px;
+}
+
+.pin-container {
+    width: 32px;
+    position: absolute;
+    z-index: 3;
+}
+
+.pin-container img {
+    width: 100%;
+}
+
+#photo-1 .image-placeholder {
+    transform: rotate(10deg);
+}
+
+#photo-1 .pin-container {
+    top: -30px;
+    left: 8%;
+}
+
+
+#photo-2 .pin-container {
+    left: 47%;
+    top: -20px;
+    width: 36px;
+}
+
+#photo-2 .image-placeholder {
+    transform: rotate(0deg);
+}
+
+#photo-3 .image-placeholder {
+    transform: rotate(-6deg);
+}
+
+#photo-3 .pin-container {
+    width: 28px;
+    left: 43%;
+    top: -40px;
+}
+
+
+#photo-4 .image-placeholder {
+    transform: rotate(7deg);
+}
+
+#photo-4 .pin-container {
+    left: 47%;
+    top: -35px;
+}
+
+
+.text-container ul {
+    font-size: clamp(16px, 14px + 1vw, 22px);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.tic-tac-toe-container {
+    position: absolute;
+    width: 80px;
+    top: 32px;
+    right: calc(21.5%);
+}
+
+img {
+    width: 100%;
+}
+
+.cool-s-container {
+    position: absolute;
+    width: 60px;
+    left: calc(21.5%);
+    bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+    .person {
+        width: auto;
+    }
+
+    .white-board {
+        padding-top: 70px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .cool-s-container {
+        width: 60px;
+        left: 40%;
+    }
+
+    .tic-tac-toe-container {
+        width: 120px;
+        top: 34%;
+        right: calc(38.5vw);
+    }
+
+}
+
+@media (max-width: 800px) {
+    .white-board {
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+
+    .row {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .person {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .text-container {
+        width: 50%;
+    }
+
+    .text-container li {
+        margin: auto;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-placeholder {
+        background-color: #EAE6B5;
+        height: clamp(90px, 30px + 12vw, 130px);
+        width: clamp(130px, 55px + 17vw, 200px);
+    }
+
+    .pin-container {
+        width: 28px;
+    }
+
+
+    .cool-s-container {
+        width: 40px;
+        left: 40%;
+        bottom: 20%;
+    }
+
+    .tic-tac-toe-container {
+        width: 80px;
+        top: 25%;
+        right: calc(45%);
+    }
+
+    #photo-4 .pin-container {
+        transform: translateY(10px);
+    }
+
+    #photo-3 .pin-container {
+        width: 24px;
+        transform: translateY(10px);
+
+    }
+}
+
+@media (max-width: 500px) {
+    .person {
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .text-container {
+        width: 100%;
+    }
+
+    .tic-tac-toe-container {
+        top: 25%;
+        left: calc(5%);
+    }
+
+    .cool-s-container {
+        left: 80%;
+    }
+
+}
