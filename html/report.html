@@ -121,5 +121,12 @@
       setTimeout(() => responseMessage.textContent = '', 5000);
     }
   });
+
+  const burger = document.querySelector('.burger-item');
+  const navButtons = document.querySelector('.buttons');
+
+  burger.addEventListener('click', () => {
+    navButtons.classList.toggle('active');
+  });
 </script>
-</html
+</html>
