@@ -28,12 +28,15 @@
       Did you find an issue with the game?<br>
       Let us know here:
     </p>
-    <form>
+    <form action="http://localhost:3000/report" method="POST">
+      <div id="response-message" style="margin-top: 10px; font-weight: bold;"></div>
       Basic rundown of the bug:<br>
-      <input type="text" class="text-input"> <br>
+      <input type="text" name="summary" class="text-input" required> <br>
       More detailed information (steps to reproduce, etc.): <br>
-      <textarea class="text-input"></textarea> <br>
-      <button type="button" class="default-button red-button">
+      <textarea name="details" class="text-input" required></textarea> <br>
+      Optional contact email (so we can follow up if needed):<br>
+      <input type="email" name="email" class="text-input" placeholder="your-email@example.com"> <br>
+      <button type="submit" class="default-button red-button">
         Send Report
       </button>
     </form>
@@ -88,4 +91,35 @@
 
 </footer>
 </body>
-</html>
+<script>
+  const form = document.querySelector('form');
+  const responseMessage = document.getElementById('response-message');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      });
+
+      if (response.ok) {
+        responseMessage.style.color = 'green';
+        responseMessage.textContent = 'Bug report submitted successfully.';
+        setTimeout(() => responseMessage.textContent = '', 5000);
+        form.reset();
+      } else {
+        throw new Error('Server responded with error');
+      }
+    } catch (error) {
+      responseMessage.style.color = 'red';
+      responseMessage.innerHTML = ' <strong>Failed to send report.</strong> Please try again later.';
+      setTimeout(() => responseMessage.textContent = '', 5000);
+    }
+  });
+</script>
+</html
