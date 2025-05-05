@@ -1,0 +1,12 @@
+.report-bug {
+    text-align: center;
+}
+
+.report-bug > h1 {
+    font-size: 80px;
+    color: #FF1D25;
+}
+
+.report-bug > p {
+    font-size: 40px;
+}

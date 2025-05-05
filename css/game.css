@@ -58,8 +58,8 @@ section.game .piece .container {
 }
 
 .piece-attribute img {
-    width: 200px;
-    height: 100px;
+    width: 80%;
+    max-width: 250px;
 }
 
 .piece-opening {
@@ -170,16 +170,23 @@ section.game .container {
 
 @media (max-width: 800px) {
     .piece-column {
+        width: 100%;
         display: flex;
         flex-direction: row;
-        gap: 20px;
+        box-sizing: border-box;
+        justify-content: space-around;
+    }
+
+    .piece-attribute {
+        width: 45%;
+        box-sizing: border-box;
     }
 
     .piece .piece-opening {
         text-align: center;
-        width: 100%;
+        width: 70%;
         padding: 20px;
-        box-sizing: border-box;
+        box-sizing: content-box;
     }
 
     .piece .container {
