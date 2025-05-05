@@ -35,4 +35,11 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  const burgerMenu = document.getElementById("burger-menu");
+  const navButtons = document.querySelector(".buttons");
+
+  burgerMenu.addEventListener("click", () => {
+    navButtons.classList.toggle("active");
+  });
 });
