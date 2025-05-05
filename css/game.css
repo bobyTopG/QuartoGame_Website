@@ -139,6 +139,7 @@ section.game .piece .piece-opening h1 {
 
 .trophy-image img {
     height: clamp(150px, 130px + 10vw, 250px);
+    width: auto;
 }
 
 .wincon-text {
