@@ -175,7 +175,7 @@ img {
         justify-content: space-between;
     }
 
-    .text-container {
+    .developers .text-container {
         width: 50%;
     }
 
@@ -225,7 +225,7 @@ img {
         flex-direction: column;
     }
 
-    .text-container {
+    .developers .text-container {
         width: 100%;
     }
 
