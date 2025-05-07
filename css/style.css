@@ -17,7 +17,7 @@ html {
 
 body {
     margin: 0;
-    font-family: 'berlin bold';
+    font-family: 'berlin bold', monospace;
 }
 
 main {
@@ -39,7 +39,7 @@ section {
 }
 
 section.hero {
-    height: calc(100vh - 77.2px);
+    height: calc(100vh - 77px);
     min-height: 600px;
     background-color: #F7F4D5;
 }
@@ -49,5 +49,6 @@ section.game {
 }
 
 section.statistics {
-    /* height: 500px; */
+    background-color: #DBD6B2;
+     height: 500px;
 }
