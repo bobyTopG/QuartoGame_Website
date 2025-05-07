@@ -15,28 +15,31 @@
 <body>
 <nav>
     <p class="logo">Quarto!</p>
-    <div class="buttons">
-        <a href="#game" class="green-btn">Game</a>
-        <a href="#statistics" class="blue-btn">Statistics</a>
-        <a href="#developers" class="orange-btn">Developers</a>
-        <a href="#">Download</a>
+    <div class="nav-container">
+        <div class="buttons">
+            <a href="#game" class="green-btn">Game</a>
+            <a href="#statistics" class="blue-btn">Statistics</a>
+            <a href="#developers" class="orange-btn">Developers</a>
+            <a href="#">Download</a>
+        </div>
+        <img src="media/burger.png" alt="burger-icon" class="burger-item" id="burger-menu">
     </div>
     <img src="media/burger.png" alt="burger-icon" class="burger-item">
 </nav>
 <main>
     <section class="hero">
         <div class="container">
+            <div class="image-container">
+                <img src="media/hero/Piece1.png" alt="piece">
+                <img src="media/hero/Piece2.png" alt="piece">
+                <img src="media/hero/Piece3.png" alt="piece">
+                <img src="media/hero/Piece4.png" alt="piece">
+                <img src="media/hero/Piece5.png" alt="piece">
+            </div>
             <div class="left">
                 <div class="text-container">
                     <div class="title">Quarto!</div>
                     <div class="sub-title">Fun for everyone</div>
-                </div>
-                <div class="image-container">
-                    <img src="media/hero/Piece1.png" alt="piece">
-                    <img src="media/hero/Piece2.png" alt="piece">
-                    <img src="media/hero/Piece3.png" alt="piece">
-                    <img src="media/hero/Piece4.png" alt="piece">
-                    <img src="media/hero/Piece5.png" alt="piece">
                 </div>
 
             </div>
@@ -213,9 +216,9 @@
                         <div class="text-container">
                             <ul>
                                 <li class="name">Joseph Harter-Hartis</li>
-                                <li class="role">Role: To Fill In</li>
-                                <li class="hobbies">Hobbies: To Fill In </li>
-
+                                <li class="role">Role: Programmer, HTML Design</li>
+                                <li class="hobbies">Hobbies: Video Games, Golf </li>
+    
                             </ul>
                         </div>
                     </div>
@@ -252,21 +255,21 @@
                     <h1>Contact</h1>
                 </div>
                 <div class="center">
-                    <button type="button" class="default-button red-button">Report Bug</button>
+                    <a href="html/report.html" class="default-button red-button">Report Bug</button></a>
                 </div>
                 <p>
                     or write to<br>
                     example@gmail.com
                 </p>
             </div>
-            <div class="footer-div">
+            <div class="footer-div" >
                 <div class="footer-title">
                     <h1>Download</h1>
                 </div>
                 <div class="center">
-                    <button type="button" class="default-button gray-button">Download</button>
+                    <a href="game/ACS103-T2-Game2%202.zip" download class="default-button gray-button" style="text-decoration: none;">Download</a>
                 </div>
-                <p>
+                <p id= "git">
                     or<br>
                     <a href="https://gitlab.com/kdg-ti/integration-1.2/2024-2025/acs103-t2/ACS103-T2-Game" class="a">Git Repository</a>
                 </p>

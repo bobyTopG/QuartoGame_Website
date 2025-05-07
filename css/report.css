@@ -1,0 +1,39 @@
+.report-bug {
+    text-align: center;
+    padding: 20px;
+}
+
+.report-bug > h1 {
+    font-size: 80px;
+    color: #FF1D25;
+}
+
+.report-bug > p {
+    font-size: 40px;
+}
+
+.report-bug > form {
+    font-size: 30px;
+    font-family: "berlin";
+    line-height: 200%;
+}
+
+.text-input {
+    font-family: "berlin";
+    text-align: left;
+    border-width: 6px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #232323;
+    font-size: 20px;
+    padding: 10px;
+    width: 600px;
+    cursor: text;
+}
+
+textarea.text-input {
+    height: 200px;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 200px;
+}

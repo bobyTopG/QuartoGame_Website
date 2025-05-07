@@ -24,13 +24,21 @@ document.addEventListener("DOMContentLoaded", function () {
             if (targetElement) {
                 const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - scrollOffset;
 
-                // Smooth scroll to the adjusted position
-                window.scrollTo({
-                    top: targetPosition, behavior: "smooth",
-                });
-            }
+        // Smooth scroll to the adjusted position
+        window.scrollTo({
+          top: targetPosition,
+          behavior: "smooth",
         });
+      }
     });
+  });
+
+  const burgerMenu = document.getElementById("burger-menu");
+  const navButtons = document.querySelector(".buttons");
+
+  burgerMenu.addEventListener("click", () => {
+    navButtons.classList.toggle("active");
+  });
 });
 
 

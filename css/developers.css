@@ -18,7 +18,7 @@
 
 .developers .title {
     margin-top: 35px;
-    font-size: clamp(80px, 70px + 4vw, 120px);
+    font-size: clamp(30px, 50px + 4vw, 120px);
     color: #F7931E;
 }
 
@@ -175,7 +175,7 @@ img {
         justify-content: space-between;
     }
 
-    .text-container {
+    .developers .text-container {
         width: 50%;
     }
 
@@ -225,7 +225,7 @@ img {
         flex-direction: column;
     }
 
-    .text-container {
+    .developers .text-container {
         width: 100%;
     }
 
