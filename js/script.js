@@ -43,7 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // Leaderboard loading
-fetch('/default_data/default.json')
+// fetch('/default_data/default.json')
+fetch('/data/game.json')
     .then(response => response.json())
     .then(data => {
         const table = document.querySelector('#statistics-table');
