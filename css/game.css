@@ -17,7 +17,8 @@ section.game .overview {
 }
 
 section.game .overview h1 {
-    font-size: clamp(80px, 70px + 4vw, 120px);
+    font-size: clamp(60px, 50px + 4vw, 100px);
+    -webkit-text-stroke: 4px black;
     color: #66C251;
     margin-top: 5px;
     margin-bottom: 10px;
