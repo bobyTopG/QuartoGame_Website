@@ -1,0 +1,117 @@
+.logo-wrapper {
+    text-align: center;
+    margin-bottom: -20px;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.login-form:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.3s ease;
+}
+
+.login-form label {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+    text-align: center;
+}
+
+.login-form input[type="text"] {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 12px;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.login-form input[type="password"] {
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0 12px;
+    text-align: left;
+    -webkit-text-security: disc;
+    text-security: disc;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus {
+    font-size: 1.2rem;
+}
+
+.login-form button {
+    padding: 14px 20px;
+    font-size: 1rem;
+    background: linear-gradient(135deg, #4a90e2, #357ABD);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-form button:hover {
+    background: linear-gradient(135deg, #357ABD, #2d6dc4);
+    transform: translateY(-2px);
+}
+
+.login-form input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f4d5;
+    background-image:
+        url('../media/hero/Piece1.png'),
+        url('../media/hero/Piece3.png'),
+        url('../media/hero/Piece4.png'),/* circle */
+        url('../media/hero/Piece5.png');
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position:
+        top 20px right 20px,
+        bottom 10px left 21px,
+        top 20px left 20px,
+        center right 60px,
+        center left 60px;
+    background-size: 100px, 80px, 100px, 80px, 100px;
+}

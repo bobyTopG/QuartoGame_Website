@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/nav-bar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/report.css">
+    <link rel="stylesheet" href="../css/loginSignin.css"></link>
+</head>
+<body>
+<div class="logo-wrapper">
+    <p class="logo">Log In</p>
+</div>
+
+<form class="login-form" id="loginForm" action="#" method="post" onsubmit="animateBackgroundPieces(); return false;">
+    <label for="username" class="input-label">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <label for="real-password">Password</label>
+    <input type="password" id="real-password" name="password" style="color: transparent; text-shadow: none; caret-color: transparent;" placeholder="Enter your password" required>
+
+    <div class="show-password">
+        <button type="button" id="toggle-password">Show Password</button>
+    </div>
+
+    <button type="submit">Login</button>
+</form>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const passwordInput = document.getElementById('real-password');
+        const togglePassword = document.getElementById('toggle-password');
+
+        const fakeOverlay = document.createElement('div');
+        fakeOverlay.style.position = 'absolute';
+        fakeOverlay.style.top = '10px';
+        fakeOverlay.style.bottom = '0';
+        fakeOverlay.style.padding = '0 12px';
+        fakeOverlay.style.zIndex = '2';
+        fakeOverlay.style.pointerEvents = 'none';
+        fakeOverlay.style.display = 'flex';
+        fakeOverlay.style.alignItems = 'center';
+        fakeOverlay.style.height = '100%';
+        fakeOverlay.style.gap = '4px';
+
+        passwordInput.parentNode.style.position = 'relative';
+        passwordInput.style.zIndex = '1';
+        passwordInput.style.position = 'relative';
+        passwordInput.parentNode.appendChild(fakeOverlay);
+
+        const updateOverlay = (value) => {
+            fakeOverlay.innerHTML = '';
+            for (let i = 0; i < value.length; i++) {
+                const img = document.createElement('img');
+                img.src = '../media/hero/Piece' + ((i % 5) + 1) + '.png';
+                img.alt = 'piece';
+                img.style.height = '20px';
+                img.style.objectFit = 'contain';
+                img.style.verticalAlign = 'middle';
+                fakeOverlay.appendChild(img);
+            }
+        };
+
+        passwordInput.addEventListener('input', () => {
+            updateOverlay(passwordInput.value);
+        });
+
+        if (passwordInput && togglePassword) {
+            togglePassword.addEventListener('click', () => {
+                const isPassword = passwordInput.type === 'password';
+                passwordInput.type = isPassword ? 'text' : 'password';
+                fakeOverlay.style.display = isPassword ? 'none' : 'flex';
+                passwordInput.style.color = isPassword ? '' : 'transparent';
+                passwordInput.style.textShadow = isPassword ? '' : 'none';
+                passwordInput.style.caretColor = isPassword ? '' : 'transparent';
+                togglePassword.textContent = isPassword ? 'Hide Password' : 'Show Password';
+            });
+        }
+    });
+</script>
+<script>
+    function animateBackgroundPieces() {
+        const body = document.body;
+        body.style.transition = 'background-position 1s ease-in-out';
+
+        const positions = [
+            'bottom 10% center',
+            'bottom 10% center',
+            'bottom 10% center',
+            'bottom 10% center',
+            'bottom 10% center'
+        ];
+
+        body.style.backgroundPosition = positions.map((pos, i) => {
+            const offset = (i - 1.5) * 22;
+            return `bottom 10% left calc(50% + ${offset}%)`;
+        }).join(', ');
+    }
+</script>
+</body>
+</html>
