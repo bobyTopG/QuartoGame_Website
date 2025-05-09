@@ -16,8 +16,12 @@
     overflow: hidden;
 }
 
-#statistics-table thead tr {
+#statistics-table th {
     background-color: #C1BAA1;
+}
+
+#statistics-table th:hover {
+    cursor: pointer;
 }
 
 #statistics-table tr {
@@ -29,22 +33,20 @@
     border: 1.5px solid black;
     padding: 10px;
     text-align: center;
-    /*border-radius: 4px;*/
 }
 
-#statistics-table thead tr:first-child th:first-child {
+#statistics-table th:first-child {
     border-top-left-radius: 4px;
 }
 
-#statistics-table thead tr:first-child th:last-child {
+#statistics-table th:last-child {
     border-top-right-radius: 4px;
 }
 
-/* Bottom rounded corners */
-#statistics-table tbody tr:last-child td:first-child {
+#statistics-table tr:last-child td:first-child {
     border-bottom-left-radius: 4px;
 }
 
-#statistics-table tbody tr:last-child td:last-child {
+#statistics-table tr:last-child td:last-child {
     border-bottom-right-radius: 4px;
 }
