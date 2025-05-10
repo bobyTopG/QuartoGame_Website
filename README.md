@@ -1,48 +1,67 @@
-# Quarto Game (Java)
+# Quarto Website
 
-This is a Java-based implementation of **Quarto**, the abstract strategy board game. It supports local multiplayer and AI opponents using Rule-Based logic. The project uses JavaFX for the graphical interface and is designed with modular architecture for easy expansion and testing.
+A responsive and interactive front-end website for the **Quarto Game Project**, designed to support user interaction, bug reporting, and game promotion. Built using HTML, CSS, and JavaScript with a custom UI and mobile-friendly layout.
 
-## 🧠 About Quarto
+## 🌐 Live Preview
 
-Quarto is a 2-player game played on a 4x4 board. There are 16 unique pieces, each with 4 different attributes:
-- Tall or short
-- Light or dark
-- Round or square
-- Solid or hollow
+<img width="1665" alt="Screenshot 2025-05-10 at 2 50 28 PM" src="https://github.com/user-attachments/assets/7004dd7d-bd98-4d79-a0d1-401dcf332f07" />
 
-Players take turns choosing a piece for their opponent to place. The goal is to be the first to place a piece that completes a row, column, or diagonal of four pieces that share at least one common attribute.
+<img width="1669" alt="Screenshot 2025-05-10 at 2 50 44 PM" src="https://github.com/user-attachments/assets/81f2a0c3-9350-4972-999e-b80cadd8cec0" />
 
-## 🚀 Features
+## 📄 Pages Overview
 
-- JavaFX-based GUI
-- Local multiplayer support
-- Two AI strategies:
-  - **Rule-Based AI** using facts and logical inference
-- Real-time win detection
-- Clean code structure and modular design
-- Debug-friendly with clear logs and structure
+- **Home Page** (`index.html`)  
+  Introduces the game and provides navigation to game, statistics, and developer sections.
 
-## 🧠 AI Strategy Overview
+- **Login Page** (`login.html`)  
+  Secure user login form with custom-styled password input using image overlays.
 
-### RuleBasedStrategy
-- Implements a lightweight inference engine
-- Defines facts (e.g., available pieces, dangerous pieces)
-- Applies rules to make logical, efficient decisions
+- **Signup Page** (`signup.html`)  
+  User registration form styled for visual consistency and responsive layout.
+
+- **Report a Bug** (`report.html`)  
+  Submits a bug report via POST to a local server (`http://localhost:3000/report`). Form fields: summary, detailed description, optional email.
+
+## ✨ Features
+
+- 🔐 Custom login UI with animated password masking
+- 🧾 Bug report submission form with success/fail feedback
+- 📱 Mobile-first navigation with responsive burger menu
+- 🎨 Modular CSS: `style.css`, `nav-bar.css`, `footer.css`, `report.css`, `loginSignin.css`
+- 🧠 Functional JavaScript:
+  - Form submission with `fetch()` and JSON handling
+  - Interactive password visibility toggle
+  - Dynamic ASCII image overlay in login form
+  - Mobile menu toggle behavior
 
 ## 🗂️ Project Structure
-src/
-├── game/       # Core game logic (GameSession, GameRules, Board, Piece, etc.)
+quarto-website/
+├── index.html
 
-├── ui/         # JavaFX GUI (GameView, BoardSpaceView, PieceView)
+├── login.html
 
-├── ai/         # AI strategies (MiniMaxStrategy, RuleBasedStrategy)
+├── signup.html
 
-├── rules/      # Inference system (Fact, Rule, InferenceEngine)
+├── report.html
 
-└── utils/      # Utility classes (enums, logging, helpers)
-## 🛠️ Getting Started
+├── css/
 
-### Requirements
-- Java 17 or higher
-- JavaFX SDK
-- A Java IDE
+│   ├── style.css
+
+│   ├── nav-bar.css
+
+│   ├── footer.css
+
+│   ├── report.css
+
+│   └── loginSignin.css
+
+├── media/
+
+│   ├── burger.png
+
+│   └── hero/
+
+│       └── Piece1.png … Piece5.png
+
+└── js/
