@@ -31,11 +31,15 @@ Players take turns choosing a piece for their opponent to place. The goal is to 
 
 ## 🗂️ Project Structure
 src/
-├── game/             # Game logic: GameSession, GameRules, Piece, Board
-├── ui/               # JavaFX GUI: GameView, PieceView, BoardView
-├── ai/               # AI strategies: MiniMax, Rule-Based
-├── rules/            # Rule engine: Facts, Rules, InferenceEngine
-└── utils/            # Helper utilities (e.g., logging, enums)
+├── game/       # Core game logic (GameSession, GameRules, Board, Piece, etc.)
+
+├── ui/         # JavaFX GUI (GameView, BoardSpaceView, PieceView)
+
+├── ai/         # AI strategies (MiniMaxStrategy, RuleBasedStrategy)
+
+├── rules/      # Inference system (Fact, Rule, InferenceEngine)
+
+└── utils/      # Utility classes (enums, logging, helpers)
 ## 🛠️ Getting Started
 
 ### Requirements
